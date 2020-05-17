@@ -1,0 +1,273 @@
+@font-face {
+  font-family: 'canterbold';
+  src: url("../fonts/canter-bold-webfont.woff2") format("woff2"), url("../fonts/canter-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'canterbold_shadow';
+  src: url("../fonts/canter-boldshadow-webfont.woff2") format("woff2"), url("../fonts/canter-boldshadow-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+.wrapper {
+  background: #2f343a;
+  overflow: auto; }
+  .wrapper .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: "header" "content" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1027px 630px 140px;
+    height: 100vh;
+    max-width: 1170px; }
+    .wrapper .grid-container header {
+      grid-area: header;
+      background: url("../img/town.jpg");
+      font-family: 'canterbold';
+      color: #f1ede1; }
+      .wrapper .grid-container header .text-container {
+        width: 526px;
+        height: 300px;
+        margin-left: 600px;
+        margin-top: 245px; }
+        .wrapper .grid-container header .text-container p {
+          font-size: 104px;
+          text-align: left;
+          line-height: 100px;
+          margin: 0; }
+          .wrapper .grid-container header .text-container p:nth-child(2) {
+            font-size: 213px; }
+          .wrapper .grid-container header .text-container p:nth-child(3) {
+            font-size: 94px; }
+      .wrapper .grid-container header .number-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 77px;
+        margin-left: 666px; }
+        .wrapper .grid-container header .number-container .number-pair-container {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          margin-right: 40px; }
+          .wrapper .grid-container header .number-container .number-pair-container .number {
+            width: 41px;
+            height: 81px;
+            background: url(../img/bg1.jpg);
+            font-size: 70px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-right: 5px; }
+      .wrapper .grid-container header div p {
+        display: inline;
+        opacity: 0.74; }
+      .wrapper .grid-container header .ddhhmm-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-size: 48px;
+        margin-left: 680px;
+        margin-top: 15px;
+        width: 337px; }
+        .wrapper .grid-container header .ddhhmm-container div {
+          margin-right: 60px; }
+    .wrapper .grid-container main {
+      grid-area: content;
+      background: url(../img/section_bg.jpg);
+      font-family: 'canterbold';
+      position: relative; }
+      .wrapper .grid-container main p {
+        text-align: center;
+        font-size: 72px;
+        text-transform: uppercase;
+        margin-top: 80px; }
+      .wrapper .grid-container main .joinus-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        .wrapper .grid-container main .joinus-container .map {
+          width: 470px;
+          height: 260px;
+          -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          margin-top: 74px;
+          border: 1px solid #b5b3af;
+          position: relative; }
+          .wrapper .grid-container main .joinus-container .map .position {
+            position: absolute;
+            top: 105px;
+            left: 223px; }
+        .wrapper .grid-container main .joinus-container .pathleft {
+          position: absolute;
+          top: -10%;
+          left: -5%; }
+        .wrapper .grid-container main .joinus-container .pathright {
+          position: absolute;
+          top: -10%;
+          right: -5%; }
+        .wrapper .grid-container main .joinus-container div form {
+          width: 470px;
+          height: 260px;
+          background: url(../img/lines.jpg);
+          margin-top: 74px;
+          border: 1px solid #e5dec5;
+          position: relative;
+          -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          .wrapper .grid-container main .joinus-container div form input,
+          .wrapper .grid-container main .joinus-container div form textarea {
+            border: none;
+            outline: none;
+            position: absolute;
+            border-left: 1px solid #fad6d5;
+            padding-left: 5px;
+            font-style: italic;
+            color: #a9a49e;
+            background: none; }
+          .wrapper .grid-container main .joinus-container div form input::-webkit-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form input::-moz-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form input:-ms-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form input::-ms-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form input::placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form input[type=text] {
+            top: 53px;
+            left: 53px; }
+          .wrapper .grid-container main .joinus-container div form input[type=email] {
+            top: 53px;
+            left: 259px; }
+          .wrapper .grid-container main .joinus-container div form textarea {
+            height: 60px;
+            top: 95px;
+            left: 53px;
+            resize: none; }
+          .wrapper .grid-container main .joinus-container div form button {
+            top: 192px;
+            text-align: center;
+            border: none;
+            background: none;
+            font-family: 'canterbold_shadow';
+            font-size: 31px;
+            margin: 0 auto;
+            -ms-flex-item-align: end;
+            align-self: flex-end;
+            margin-bottom: 35px; }
+      .wrapper .grid-container main .adress-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 235px;
+        height: 97px;
+        margin: 0 auto;
+        margin-top: 52px; }
+        .wrapper .grid-container main .adress-container div img {
+          margin-right: 10px;
+          margin-top: 5px; }
+        .wrapper .grid-container main .adress-container div p {
+          margin: 0;
+          font-family: 'Georgia','Arial';
+          font-size: 16px;
+          font-style: italic;
+          line-height: 24px;
+          text-transform: none;
+          text-align: left; }
+    .wrapper .grid-container footer {
+      grid-area: footer;
+      background: url(../img/section_bg.jpg); }
+      .wrapper .grid-container footer .img-container {
+        width: 225px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 63px; }
+        .wrapper .grid-container footer .img-container img {
+          margin-right: 52px; }
+
+@media screen and (max-width: 1145px) {
+  .wrapper .grid-container header .text-container {
+    margin-left: 37.5%; }
+  .wrapper .grid-container header .number-container {
+    margin-left: 41.5%; }
+  .wrapper .grid-container header .ddhhmm-container {
+    margin-left: 42.5%; }
+  .wrapper .grid-container footer .img-container {
+    margin-bottom: 30px; } }
+
+@media screen and (max-width: 979px) {
+  .wrapper .grid-container {
+    grid-template-rows: 1027px auto auto; }
+    .wrapper .grid-container header .text-container {
+      margin-left: 5%; }
+      .wrapper .grid-container header .text-container p {
+        font-size: 74px;
+        line-height: 65px;
+        margin: 0; }
+        .wrapper .grid-container header .text-container p:nth-child(2) {
+          font-size: 120px; }
+        .wrapper .grid-container header .text-container p:nth-child(3) {
+          font-size: 74px; }
+    .wrapper .grid-container header .number-container {
+      margin-left: 5%; }
+      .wrapper .grid-container header .number-container .number-pair-container {
+        margin-right: 35px; }
+        .wrapper .grid-container header .number-container .number-pair-container .number {
+          width: 33px;
+          height: 71px;
+          font-size: 50px; }
+    .wrapper .grid-container header .ddhhmm-container {
+      margin-left: 5%;
+      font-size: 38px; }
+      .wrapper .grid-container header .ddhhmm-container div {
+        margin-right: 60px; }
+    .wrapper .grid-container main p {
+      font-size: 52px;
+      text-transform: uppercase; }
+    .wrapper .grid-container main .joinus-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-left: 5%; }
+      .wrapper .grid-container main .joinus-container .map {
+        width: calc(470px*0.9);
+        height: calc(260px*0.9); }
+        .wrapper .grid-container main .joinus-container .map img {
+          max-width: 100%; }
+        .wrapper .grid-container main .joinus-container .map .position {
+          top: calc(105px*0.9);
+          left: calc(223px*0.9); }
+      .wrapper .grid-container main .joinus-container div form {
+        width: calc(470px*0.9);
+        height: calc(260px*0.9);
+        background: url(../img/lines.jpg); }
+        .wrapper .grid-container main .joinus-container div form button {
+          margin-bottom: 2%; } }
+
+/*# sourceMappingURL=style.css.map */
