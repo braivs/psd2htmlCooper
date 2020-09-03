@@ -223,6 +223,7 @@ html, body {
 
 @media screen and (max-width: 1145px) {
   .wrapper .grid-container header .text-container {
+    margin-top: 100px;
     margin-left: 37.5%; }
   .wrapper .grid-container header .number-container {
     margin-left: 41.5%; }
@@ -235,7 +236,7 @@ html, body {
   .wrapper .grid-container {
     grid-template-rows: 1027px auto auto; }
     .wrapper .grid-container header .text-container {
-      margin-left: 5%; }
+      margin-left: 15px; }
       .wrapper .grid-container header .text-container p {
         font-size: 74px;
         line-height: 65px;
@@ -245,18 +246,20 @@ html, body {
         .wrapper .grid-container header .text-container p:nth-child(3) {
           font-size: 74px; }
     .wrapper .grid-container header .number-container {
-      margin-left: 5%; }
+      margin-left: 15px; }
       .wrapper .grid-container header .number-container .number-pair-container {
-        margin-right: 35px; }
+        margin-right: 10px; }
         .wrapper .grid-container header .number-container .number-pair-container .number {
           width: 33px;
           height: 71px;
           font-size: 50px; }
     .wrapper .grid-container header .ddhhmm-container {
-      margin-left: 5%;
+      margin-left: 15px;
       font-size: 38px; }
       .wrapper .grid-container header .ddhhmm-container div {
-        margin-right: 60px; }
+        margin-right: 40px; }
+        .wrapper .grid-container header .ddhhmm-container div:nth-of-type(2) {
+          margin-right: 30px; }
     .wrapper .grid-container main p {
       font-size: 52px;
       text-transform: uppercase; }
