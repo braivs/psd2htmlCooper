@@ -34,7 +34,7 @@ html, body {
       font-family: 'canterbold';
       color: #f1ede1; }
       .wrapper .grid-container header .text-container {
-        width: 526px;
+        max-width: 526px;
         height: 300px;
         margin-left: 600px;
         margin-top: 245px; }
@@ -120,10 +120,6 @@ html, body {
           margin-top: 74px;
           border: 1px solid #b5b3af;
           position: relative; }
-          .wrapper .grid-container main .joinus-container .map .position {
-            position: absolute;
-            top: 105px;
-            left: 223px; }
         .wrapper .grid-container main .joinus-container .pathleft {
           position: absolute;
           top: -10%;
@@ -154,6 +150,16 @@ html, body {
             font-style: italic;
             color: #a9a49e;
             background: none; }
+          .wrapper .grid-container main .joinus-container div form textarea::-webkit-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form textarea::-moz-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form textarea:-ms-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form textarea::-ms-input-placeholder {
+            color: #a9a49e; }
+          .wrapper .grid-container main .joinus-container div form textarea::placeholder {
+            color: #a9a49e; }
           .wrapper .grid-container main .joinus-container div form input::-webkit-input-placeholder {
             color: #a9a49e; }
           .wrapper .grid-container main .joinus-container div form input::-moz-placeholder {
@@ -278,14 +284,45 @@ html, body {
         height: calc(260px*0.9); }
         .wrapper .grid-container main .joinus-container .map img {
           max-width: 100%; }
-        .wrapper .grid-container main .joinus-container .map .position {
-          top: calc(105px*0.9);
-          left: calc(223px*0.9); }
       .wrapper .grid-container main .joinus-container div form {
         width: calc(470px*0.9);
         height: calc(260px*0.9);
         background: url(../img/lines.jpg); }
         .wrapper .grid-container main .joinus-container div form button {
           margin-bottom: 2%; } }
+
+@media (max-width: 500px) {
+  .wrapper .grid-container header .text-container p {
+    font-size: 70px;
+    line-height: 60px;
+    margin: 0; }
+    .wrapper .grid-container header .text-container p:nth-child(2) {
+      font-size: 100px; }
+    .wrapper .grid-container header .text-container p:nth-child(3) {
+      font-size: 70px; }
+  .wrapper .grid-container main .joinus-container .map {
+    width: calc(470px*0.7);
+    height: calc(260px*0.7); }
+  .wrapper .grid-container main .joinus-container div form {
+    width: calc(470px*0.7);
+    height: calc(260px*0.7); }
+    .wrapper .grid-container main .joinus-container div form input[type=text] {
+      left: 25px; }
+    .wrapper .grid-container main .joinus-container div form input[type=email] {
+      left: 180px; }
+    .wrapper .grid-container main .joinus-container div form textarea {
+      left: 25px; }
+    .wrapper .grid-container main .joinus-container div form button {
+      font-size: 25px; } }
+
+@media (max-width: 400px) {
+  .wrapper .grid-container header .text-container p {
+    font-size: 50px;
+    line-height: 45px;
+    margin: 0; }
+    .wrapper .grid-container header .text-container p:nth-child(2) {
+      font-size: 80px; }
+    .wrapper .grid-container header .text-container p:nth-child(3) {
+      font-size: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

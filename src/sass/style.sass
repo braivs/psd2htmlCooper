@@ -33,7 +33,7 @@ html, body
 			font-family: 'canterbold'
 			color: #f1ede1
 			.text-container
-				width: 526px
+				max-width: 526px
 				height: 300px
 				margin-left: 600px
 				margin-top: 245px
@@ -97,10 +97,6 @@ html, body
 					margin-top: 74px
 					border: 1px solid #b5b3af
 					position: relative
-					.position
-						position: absolute
-						top: 105px
-						left: 223px
 				.pathleft
 					position: absolute
 					top: -10%
@@ -129,6 +125,8 @@ html, body
 							font-style: italic
 							color: #a9a49e
 							background: none
+						textarea::placeholder
+							color: #a9a49e
 						input::placeholder
 							color: #a9a49e
 						input[type=text]
@@ -233,7 +231,6 @@ html, body
 					text-transform: uppercase
 				.joinus-container
 					flex-direction: column
-					// margin-left: 5%
 					align-items: center
 					.map
 						width: calc(470px*0.9)
@@ -241,9 +238,6 @@ html, body
 						img
 							max-width: 100%
 							height:auto
-						.position
-							top: calc(105px*0.9)
-							left: calc(223px*0.9)
 					div
 						form
 							width: calc(470px*0.9)
@@ -251,19 +245,102 @@ html, body
 							background: url(../img/lines.jpg)
 							button
 								margin-bottom: 2%
-// @media (max-width: 567px)
-// 	.wrapper
-// 		.grid-container
-// 			header
-// 				.text-container
-// 				.number-container
-// 					.number-pair-container
-// 						.number
-// 				.ddhhmm-container
-// 					div
-// 			main
-// 				p
-// 				.joinus-container
-// 					// flex-direction: row
-// 					border: 5px solid red
+@media (max-width: 500px)
+	.wrapper
+		.grid-container
+			header
+				.text-container
+					p
+						font-size: 70px
+						line-height: 60px
+						margin: 0
+						&:nth-child(2)
+							font-size: 100px
+						&:nth-child(3)
+							font-size: 70px
+				.number-container
+					.number-pair-container
+						.number 
+					.number-pair-container
+						.number 
+					.number-pair-container
+						.number
+				.ddhhmm-container
+					div
+			main
+				p 
+				.joinus-container
+					.map
+						width: calc(470px*0.7)
+						height: calc(260px*0.7)
+						img
+						img.pathleft
+						img.pathright
+					div
+						form
+							width: calc(470px*0.7)
+							height: calc(260px*0.7)
+							input
+							input[type=text]
+								left: 25px
+							input[type=email]
+								left: 180px
+							textarea
+								left: 25px
+							button
+								font-size: 25px
+							img.pathright
+							img.pathleft
+				.adress-container
+					div
+						img
+					div
+						p
+			footer
+				.img-container
+					img
+@media (max-width: 400px)
+	.wrapper
+		.grid-container
+			header
+				.text-container
+					p
+						font-size: 50px
+						line-height: 45px
+						margin: 0
+						&:nth-child(2)
+							font-size: 80px
+						&:nth-child(3)
+							font-size: 50px
+				.number-container
+					.number-pair-container
+						.number 
+					.number-pair-container
+						.number 
+					.number-pair-container
+						.number
+				.ddhhmm-container
+					div
+			main
+				p 
+				.joinus-container
+					.map
+						img
+						img.pathleft
+						img.pathright
+					div
+						form
+							input
+							textarea 
+							button 
+							img.pathright
+							img.pathleft
+				.adress-container
+					div
+						img
+					div
+						p
+			footer
+				.img-container
+					img
 
