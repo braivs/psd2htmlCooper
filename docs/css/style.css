@@ -49,12 +49,14 @@ html, body {
             font-size: 94px; }
       .wrapper .grid-container header .number-container {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin-top: 77px;
         margin-left: 666px; }
         .wrapper .grid-container header .number-container .number-pair-container {
           display: -webkit-box;
+          display: -webkit-flex;
           display: -ms-flexbox;
           display: flex;
           margin-right: 40px; }
@@ -64,14 +66,17 @@ html, body {
             background: url(../img/bg1.jpg);
             font-size: 70px;
             display: -webkit-box;
+            display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
             -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center;
             -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
             border-radius: 5px;
             margin-right: 5px; }
       .wrapper .grid-container header div p {
@@ -79,6 +84,7 @@ html, body {
         opacity: 0.74; }
       .wrapper .grid-container header .ddhhmm-container {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         font-size: 48px;
@@ -99,15 +105,18 @@ html, body {
         margin-top: 80px; }
       .wrapper .grid-container main .joinus-container {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
-        -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        max-width: 100%;
+        border: 3px solid red; }
         .wrapper .grid-container main .joinus-container .map {
           width: 470px;
           height: 260px;
-          -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           margin-top: 74px;
           border: 1px solid #b5b3af;
@@ -131,9 +140,9 @@ html, body {
           margin-top: 74px;
           border: 1px solid #e5dec5;
           position: relative;
-          -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
           display: -webkit-box;
+          display: -webkit-flex;
           display: -ms-flexbox;
           display: flex; }
           .wrapper .grid-container main .joinus-container div form input,
@@ -175,11 +184,13 @@ html, body {
             font-family: 'canterbold_shadow';
             font-size: 31px;
             margin: 0 auto;
-            -ms-flex-item-align: end;
-            align-self: flex-end;
+            -webkit-align-self: flex-end;
+                -ms-flex-item-align: end;
+                    align-self: flex-end;
             margin-bottom: 35px; }
       .wrapper .grid-container main .adress-container {
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         width: 235px;
@@ -203,6 +214,7 @@ html, body {
       .wrapper .grid-container footer .img-container {
         width: 225px;
         display: -webkit-box;
+        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
@@ -252,9 +264,14 @@ html, body {
     .wrapper .grid-container main .joinus-container {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      margin-left: 5%; }
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-left: 5%;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .wrapper .grid-container main .joinus-container .map {
         width: calc(470px*0.9);
         height: calc(260px*0.9); }
