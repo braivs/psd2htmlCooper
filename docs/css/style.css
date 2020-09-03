@@ -112,8 +112,7 @@ html, body {
         -webkit-justify-content: space-around;
             -ms-flex-pack: distribute;
                 justify-content: space-around;
-        max-width: 100%;
-        border: 3px solid red; }
+        max-width: 100%; }
         .wrapper .grid-container main .joinus-container .map {
           width: 470px;
           height: 260px;
@@ -267,7 +266,6 @@ html, body {
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-left: 5%;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
