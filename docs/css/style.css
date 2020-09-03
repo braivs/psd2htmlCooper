@@ -12,7 +12,8 @@
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 html, body {
   height: 100%; }
@@ -90,7 +91,7 @@ html, body {
         font-size: 48px;
         margin-left: 680px;
         margin-top: 15px;
-        width: 337px; }
+        max-width: 337px; }
         .wrapper .grid-container header .ddhhmm-container div {
           margin-right: 60px; }
     .wrapper .grid-container main {
@@ -324,5 +325,41 @@ html, body {
       font-size: 80px; }
     .wrapper .grid-container header .text-container p:nth-child(3) {
       font-size: 50px; } }
+
+@media (max-width: 350px) {
+  .wrapper .grid-container {
+    max-width: 100%; }
+    .wrapper .grid-container main p {
+      font-size: 50px; }
+    .wrapper .grid-container main .joinus-container .map {
+      width: calc(470px*0.6);
+      height: calc(260px*0.6); }
+    .wrapper .grid-container main .joinus-container div form {
+      width: calc(470px*0.6);
+      height: calc(260px*0.6); }
+      .wrapper .grid-container main .joinus-container div form input[type=text] {
+        top: 30px; }
+      .wrapper .grid-container main .joinus-container div form input[type=email] {
+        top: 30px; }
+      .wrapper .grid-container main .joinus-container div form textarea {
+        top: 55px; } }
+
+@media (max-width: 285px) {
+  .wrapper .grid-container {
+    max-width: 100%; }
+    .wrapper .grid-container main p {
+      font-size: 50px; }
+    .wrapper .grid-container main .joinus-container .map {
+      width: calc(470px*0.5);
+      height: calc(260px*0.5); }
+    .wrapper .grid-container main .joinus-container div form {
+      width: calc(470px*0.5);
+      height: calc(260px*0.5); }
+      .wrapper .grid-container main .joinus-container div form input[type=text] {
+        left: 20px; }
+      .wrapper .grid-container main .joinus-container div form input[type=email] {
+        left: 130px; }
+      .wrapper .grid-container main .joinus-container div form textarea {
+        left: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

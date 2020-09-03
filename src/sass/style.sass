@@ -12,6 +12,7 @@
 *
 	margin: 0
 	padding: 0
+	box-sizing: border-box
 
 html, body
 	height: 100%
@@ -72,7 +73,7 @@ html, body
 				font-size: 48px
 				margin-left: 680px
 				margin-top: 15px
-				width: 337px
+				max-width: 337px
 				div
 					margin-right: 60px
 		main
@@ -312,35 +313,58 @@ html, body
 							font-size: 80px
 						&:nth-child(3)
 							font-size: 50px
-				.number-container
-					.number-pair-container
-						.number 
-					.number-pair-container
-						.number 
-					.number-pair-container
-						.number
-				.ddhhmm-container
-					div
+@media (max-width: 350px)
+	.wrapper
+		.grid-container
+			max-width: 100%
+			header
+				.text-container
+					p
 			main
 				p 
+					font-size: 50px
 				.joinus-container
 					.map
+						width: calc(470px*0.6)
+						height: calc(260px*0.6)
 						img
 						img.pathleft
 						img.pathright
 					div
 						form
-							input
-							textarea 
-							button 
-							img.pathright
-							img.pathleft
-				.adress-container
-					div
+							width: calc(470px*0.6)
+							height: calc(260px*0.6)
+							input[type=text]
+								top: 30px
+							input[type=email]
+								top: 30px
+							textarea
+								top: 55px
+@media (max-width: 285px)
+	.wrapper
+		.grid-container
+			max-width: 100%
+			header
+				.text-container
+					p
+			main
+				p 
+					font-size: 50px
+				.joinus-container
+					.map
+						width: calc(470px*0.5)
+						height: calc(260px*0.5)
 						img
+						img.pathleft
+						img.pathright
 					div
-						p
-			footer
-				.img-container
-					img
-
+						form
+							width: calc(470px*0.5)
+							height: calc(260px*0.5)
+							input
+							input[type=text]
+								left: 20px
+							input[type=email]
+								left: 130px
+							textarea
+								left: 20px
