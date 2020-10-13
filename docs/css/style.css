@@ -225,9 +225,36 @@ html, body {
         display: -ms-flexbox;
         display: flex;
         margin: 0 auto;
-        margin-top: 63px; }
+        margin-top: 40px; }
         .wrapper .grid-container footer .img-container img {
           margin-right: 52px; }
+      .wrapper .grid-container footer .contacts {
+        padding-top: 15px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .wrapper .grid-container footer .contacts p {
+          padding: 0;
+          text-align: left; }
+          .wrapper .grid-container footer .contacts p:nth-of-type(1) {
+            margin-right: 5px; }
+          .wrapper .grid-container footer .contacts p:nth-of-type(2) {
+            margin-left: 5px; }
+        .wrapper .grid-container footer .contacts a {
+          margin-left: 0;
+          padding: 0; }
+        .wrapper .grid-container footer .contacts img {
+          width: 25px;
+          opacity: 0.3; }
 
 @media screen and (max-width: 1145px) {
   .wrapper .grid-container header .text-container {
@@ -236,9 +263,7 @@ html, body {
   .wrapper .grid-container header .number-container {
     margin-left: 41.5%; }
   .wrapper .grid-container header .ddhhmm-container {
-    margin-left: 42.5%; }
-  .wrapper .grid-container footer .img-container {
-    margin-bottom: 30px; } }
+    margin-left: 42.5%; } }
 
 @media screen and (max-width: 979px) {
   .wrapper .grid-container {
